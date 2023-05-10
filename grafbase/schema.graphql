@@ -3,9 +3,7 @@ extend schema
     name: "Tinybird"
     url: "{{ env.TINYBIRD_API_URL }}"
     schema: "{{ env.TINYBIRD_API_SCHEMA }}"
-    headers: [
-      { name: "Authorization", value: "Bearer {{ env.TINYBIRD_API_TOKEN }}" }
-    ]
+    headers: [{ name: "Authorization", value: "Bearer {{ env.TINYBIRD_API_TOKEN }}" }]
   )
   @cache(
     rules: [{
